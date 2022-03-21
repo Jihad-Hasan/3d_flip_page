@@ -12,14 +12,15 @@
             background-color: #000;
         }
 
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
+       
 
         .flip-card {
             background-color: transparent;
             padding-top: 40px;
+            width: 307px;
+            height: 600px;
+            perspective: 1000px;
+            margin: 0 auto;
         }
 
         .flip-card-inner {
@@ -47,6 +48,18 @@
         .flip-card-back {
             transform: rotateY(180deg);
         }
+
+
+@media (max-width: 991.98px) {
+    .img-fluid{
+        height: 500px;
+    }
+}
+@media (max-width: 575.98px) { 
+    .img-fluid {
+            height: 400px;
+        }
+}
     </style>
 </head>
 
